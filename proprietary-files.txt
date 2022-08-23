@@ -366,6 +366,9 @@ vendor/etc/camera/vidhance_calibration
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera-sensor (Redmi K40S) - from munch MIUI V14.0.3.0.TLMCNXM
+vendor/lib64/camera/com.qti.sensormodule.munch_ofilm_imx582_wide.bin|2e2c737b926f67859917f5067fdc8027eac83c08
+
 # Charger (HVDCP)
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
