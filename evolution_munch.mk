@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/munch/device.mk)
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# Inherit extra stuff
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Evolution-X Flags
 EVO_BUILD_TYPE := COMMUNITY
 TARGET_SUPPORTS_QUICK_TAP := true
