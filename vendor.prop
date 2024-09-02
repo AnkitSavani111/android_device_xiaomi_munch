@@ -33,6 +33,9 @@ vendor.audio.lowpower=true
 vendor.audio.offload.buffer.size.kb=256
 vendor.audio_hal.period_multiplier=2
 
+# Audio hardware
+ro.hardware.audio.primary=munch
+
 # Refresh Rate
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.set_display_power_timer_ms=1000
