@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayDevice
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
