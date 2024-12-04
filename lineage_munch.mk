@@ -17,10 +17,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit extra stuff
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Evolution-X Flags
-EVO_BUILD_TYPE := COMMUNITY
+# Device Flags
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# RisingTechOSS Flags
+WITH_GMS := true
+RISING_MAINTAINER="Ankit Savani"
+TARGET_HAS_UDFPS := false
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 870 5G" \
+    RisingMaintainer="Ankit Savani"
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_munch
