@@ -7,6 +7,9 @@
 # Inherit from sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
+# Keys
+include vendor/lineage-priv/keys/keys.mk
+
 DEVICE_PATH := device/xiaomi/munch
 
 # Board
