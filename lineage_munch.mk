@@ -11,14 +11,36 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-# Inherit some common Evolution X stuff.
+# Inherit some common Project Matrixx stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit extra stuff
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Evolution-X Flags
-EVO_BUILD_TYPE := COMMUNITY
+# Project Matrixx Flags
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := Ankit Savani
+MATRIXX_CHIPSET := Snapdragon 870 5G
+MATRIXX_BATTERY := 4500 mAh
+MATRIXX_DISPLAY := 1080 x 2400, 120 Hz
+
+# To include Gapps 
+WITH_GMS := true
+
+# To Build Google(Dailer, Message, Phone) and BCR
+WITH_GMS_COMMS_SUITE := true
+
+# To Add cinematic wallpaer support (only supported in gapps build not in vanilla remove this flag for vanilla builds)
+TARGET_SUPPORTS_WALLEFFECT := true
+
+# Some more GMS Flag
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true
+
+# Bypass Charging
+BYPASS_CHARGE_SUPPORTED  := true
+
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
