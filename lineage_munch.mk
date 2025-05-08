@@ -22,6 +22,9 @@ EVO_BUILD_TYPE := COMMUNITY
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Bypass charging node /sys/class/power_supply/battery/input_suspend
+BYPASS_CHARGE_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_munch
 PRODUCT_DEVICE := munch
